@@ -13,6 +13,7 @@ html_template = r'''
     <li><b>{{name}}</b>: <tt>{{value}}</tt></li>
   % end
 </ul>
+<div>{{guid_token}}</div>
 </body>
 '''
 
