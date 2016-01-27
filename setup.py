@@ -29,4 +29,3 @@ setup(
     test_suite='nose.collector',
     include_package_data=True,
     packages=find_packages(exclude=['*.tests']))
-# comment
