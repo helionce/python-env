@@ -5,6 +5,8 @@ WORKDIR /src
 
 RUN pip install -r requirements.pypm
 
+RUN nosetests
+
 EXPOSE 8080
 
 CMD ["python", "app.py"]
