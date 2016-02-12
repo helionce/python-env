@@ -13,12 +13,12 @@ html_template = r'''
     <li><b>{{name}}</b>: <tt>{{value}}</tt></li>
   % end
 </ul>
-<div>{{guid_token}}</div>
+<div>GUID: {{guid}}</div>
 </body>
 '''
 
 @route('/')
 def index():
-    return template(html_template, envlist=os.environ)
+    return template(html_template, envlist=os.environ, guid='{{guid_token}}')
 
 run(host='0.0.0.0', port=int(os.getenv("PORT", 8080)))
