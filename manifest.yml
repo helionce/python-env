@@ -1,3 +1,3 @@
 applications:
-- name: python-env-github
+- name: ge-python-env
   memory: 32M
